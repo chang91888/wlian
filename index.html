@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>重钢别墅订制</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+    <script src="./files/js/jquery.js"></script>
+    <link rel="stylesheet" href="./files/css/style.css" />
+    <script>
+        function setElementContent($id, $content) {
+            const lement = document.getElementById($id);
+            element.innerText =$content;
+        }
+
+        function getUrlParam($name) {
+            const w = new URL(window.location.href);
+            value = w.searchParams.get($name);
+            return value;
+        }
+
+        //事件回调
+        function eventFeedback($event_type, $callback){
+            const now = new Date();
+            const timestamp = now.getTime();
+
+            fetch('https://analytics.oceanengine.com/api/v2/conversion', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    event_type: $event_type,
+                    context: {
+                        ad: {
+                            callback: $callback
+                        }
+                    },
+                    timestamp: timestamp
+                })
+            })
+        }
+    </script>
+    <script>
+        var adid = getUrlParam('adid');
+        var creativeid = getUrlParam('creativeid');
+        var creativetype = getUrlParam('creativetype');
+        var clickid = getUrlParam('clickid');
+    </script>
+</head>
+
+<body style="background-color: #f2f2f2;">
+    <div id="main">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Microsoft YaHei';
+            }
+
+            .div_all {
+                width: 100%px;
+                margin: 0 auto;
+                min-width: 320px;
+                max-width: 640px;
+            }
+
+            .div_all img {
+                display: block;
+            }
+        </style>
+        <div class="div_all">
+            <img src="./files/img/1.jpg" width="100%" alt="">
+            <img src="./files/img/2.jpg" width="100%" alt="">
+            <img src="./files/img/3.jpg" width="100%" alt="">
+            <img src="./files/img/4.jpg" width="100%" alt="">
+            <img src="./files/img/5.jpg" width="100%" alt="">
+            <img src="./files/img/6.jpg" width="100%" alt="">
+            <img src="./files/img/7.jpg" width="100%" alt="">
+            <img src="./files/img/8.jpg" width="100%" alt="">
+            <img src="./files/img/9.jpg" width="100%" alt="">
+
+            <style type="text/css">
+                .fy_mobile_contain {
+                    margin: 0px auto;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .fy_mobile_user {
+                    border: 1px solid #c8c8c8;
+                    border-radius: 5px;
+                    display: inline-block;
+                    font-size: 14px;
+                    height: 35px;
+                    margin-top: 15px;
+                    padding: 0 5px;
+                    width: 95%;
+                }
+
+                .fy_mobile_btn {
+                    background: #c31b00;
+                    border: 0 none;
+                    border-radius: 0px;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 14px;
+                    height: 35px;
+                    line-height: 35px;
+                    margin-top: 15px;
+                    width: 98.6%;
+                    -webkit-appearance: none;
+                }
+
+                .fy_moble_select {
+                    border: 1px solid #c8c8c8;
+                    border-radius: 3px;
+                    margin-top: 15px;
+                    font-size: 14px;
+                    height: 35px;
+                    line-height: 35px;
+                    width: 98.6%;
+                }
+            </style>
+        </div>
+    </div>
+    <div id="footer" style="background-color: #FFF; margin: auto; float: left; width: 100%;color:#bdb6b6">
+        <div style="text-align: center; line-height: 23px; padding: 0px 0; background: #fff;">
+            <p>网站技术支持：沙洋县坤可建材经营部</p>
+        </div>
+    </div>
+    <style>
+        .phone {
+            display: table;
+            background: url(./files/img/d3.png) repeat-x left top;
+            background-position: bottom;
+            padding-top: 45px;
+            background-size: 2px 45px;
+            position: fixed;
+            bottom: 0;
+            z-index: 999;
+            height: 45px;
+            width: 100%;
+            min-width: 320px;
+            max-width: 640px;
+        }
+
+        .phone div.fd_sy {
+            width: 33%;
+        }
+
+        .phone div {
+            float: left;
+            text-align: center;
+        }
+
+        .phone div a {
+            color: #FFF;
+            line-height: 45px;
+            text-align: center;
+            display: block;
+            width: 100%;
+            height: 45px;
+            text-decoration: none;
+        }
+
+        .phone div.fd_th {
+            width: 33.5%;
+            background: #2b8c00;
+        }
+
+        .phone div.fd_zx {
+            width: 33.5%;
+            background: #f85d00;
+        }
+    </style>
+    <script>(function () { var _53code = document.createElement("script"); _53code.src = "https://tb.53kf.com/code/code/4d8d86e5834005f5cabcef5c176039061/4"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(_53code, s); })();</script>
+
+</html>
